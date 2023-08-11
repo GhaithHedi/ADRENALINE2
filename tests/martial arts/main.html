@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>martial arts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+        <section class="Martial-arts" id="martial-arts">
+            <!-- Karate Card -->
+            <div class="class-card">
+              <div class="class-image">
+                <img src="karate.jpg" alt="Karate">
+              </div>
+              <div class="class-info">
+                <div class="class-name">Karate</div>
+                <div class="coach-name">
+                  <a href="#" style="text-decoration: none; color: black;">Coach John</a>
+                </div>
+                <div class="class-horror">
+                  <ul>
+                    <li>
+                      <span class="class-type">Adults</span>
+                      <span class="class-time">Mon, Wed, Fri 9:00 AM - 10:00 AM</span>
+                    </li>
+                    <li>
+                      <span class="class-type">Females</span>
+                      <span class="class-time">Tue, Thu 4:00 PM - 5:00 PM</span>
+                    </li>
+                    <li>
+                      <span class="class-type">Kids</span>
+                      <span class="class-time">Sat 11:00 AM - 12:00 PM</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="class-action">
+                  <p class="class-price">40 Dinars</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Taekwondo Card -->
+            <div class="class-card">
+              <div class="class-image">
+                <img src="taekwondo.jpg" alt="Taekwondo">
+              </div>
+              <div class="class-info">
+                <div class="class-name">Taekwondo</div>
+                <div class="coach-name">
+                  <a href="#" style="text-decoration: none; color: black;">Coach Sarah</a>
+                </div>
+                <div class="class-horror">
+                  <ul>
+                    <li>
+                      <span class="class-type">Adults</span>
+                      <span class="class-time">Mon, Wed, Fri 9:00 AM - 10:00 AM</span>
+                    </li>
+                    <li>
+                      <span class="class-type">Females</span>
+                      <span class="class-time">Tue, Thu 4:00 PM - 5:00 PM</span>
+                    </li>
+                    <li>
+                      <span class="class-type">Kids</span>
+                      <span class="class-time">Sat 11:00 AM - 12:00 PM</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="class-action">
+                  <p class="class-price">40 Dinars</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Kick-Boxing Card -->
+            <div class="class-card">
+              <div class="class-image">
+                <img src="kickboxing.jpg" alt="Kick-Boxing">
+              </div>
+              <div class="class-info">
+                <div class="class-name">Kick-Boxing</div>
+                <div class="coach-name">
+                  <a href="#" style="text-decoration: none; color: black;">Coach Mike</a>
+                </div>
+                <div class="class-horror">
+                  <ul>
+                    <li>
+                      <span class="class-type">Adults</span>
+                      <span class="class-time">Mon, Wed, Fri 9:00 AM - 10:00 AM</span>
+                    </li>
+                    <li>
+                      <span class="class-type">Females</span>
+                      <span class="class-time">Tue, Thu 4:00 PM - 5:00 PM</span>
+                    </li>
+                    <li>
+                      <span class="class-type">Kids</span>
+                      <span class="class-time">Sat 11:00 AM - 12:00 PM</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="class-action">
+                  <p class="class-price">40 Dinars (Kids: 35 Dinars)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more class-cards here if needed -->
+          </section>
+
+          <style>
+           /* Reset default margin and padding */
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some spacing between elements */
+.Martial-arts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.class-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Card hover effect */
+.class-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class-image img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.class-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.coach-name {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.class-horror {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.class-horror li {
+  list-style: none;
+  margin-bottom: 4px;
+}
+
+.class-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.join-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add some basic styling to the button when hovered */
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+/* Specific styles for Kick-Boxing class */
+.class-card:nth-child(3) .class-price {
+  color: #FF0000; /* Red color for the price */
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+          </style>
+    </body>
+</html>

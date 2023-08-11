@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      
+      .card {
+        width: 300px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .card-content {
+        padding: 20px;
+      }
+      
+      .coach-name {
+        margin-top: 0;
+        color: #333;
+      }
+      
+      .class-details {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+      
+      .class-type {
+        color: #555;
+      }
+      
+      .class-time {
+        color: #777;
+      }
+      
+      .class-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e74c3c;
+        margin-top: 10px;
+      }
+      
+      .join-button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .join-button:hover {
+        background-color: #2980b9;
+      }
+      
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="coach-image.jpg" alt="Coach Image">
+    <div class="card-content">
+      <h3 class="coach-name">Coach John Doe</h3>
+      <ul class="class-details">
+        <li>
+          <span class="class-type">Female Only</span>
+          <span class="class-time">Mon, Wed, Fri 9:00 AM - 10:00 AM</span>
+        </li>
+      </ul>
+      <div class="class-price">
+        $49.99/month
+      </div>
+      <button class="join-button">Join</button>
+    </div>
+  </div>
+</body>
+</html>
+

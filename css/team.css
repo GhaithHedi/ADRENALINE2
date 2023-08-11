@@ -1,0 +1,103 @@
+
+/*!
+Copyright (c) 2023 Hedi Mohamed Ghaith
+*/
+
+
+.team-members{
+  background-color:#222222;
+}
+
+.team-members h2 {
+  text-align:center;
+  color: white;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  margin-top:30px;
+}
+
+.team-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team-members .team-content{
+  margin-top :30px;
+}
+
+.team-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.team-card:hover {
+ transform: scale(1.1);
+}
+
+.team-card:hover .team-image {
+  opacity: 0.9;
+}
+
+.team-image img{
+  width: 100%
+}
+
+.team-info {
+  padding: 1em;
+}
+
+.team-title {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.team-category {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.team-more-details {
+  text-decoration: none;
+  color: white;
+  background-color:red;
+  border:1px solid red;
+  padding:5px;
+  transition: all .4s ease;
+}
+
+.team-more-details:hover {
+  color: red;
+  background-color:white;
+}
+
+.team-show-more{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align:center;
+  color: white;
+  background-color:red;
+  border:1px solid red;
+  padding:5px;
+  transition: all .4s ease;
+}
+
+.team-show-more : hover{
+  color: red;
+  background-color:white;
+}
+
+
+/*!
+Copyright (c) 2023 Hedi Mohamed Ghaith
+*/

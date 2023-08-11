@@ -1,0 +1,122 @@
+/* Global styles (if needed) */
+
+
+
+
+/* Main content styles */
+.coach-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding:200px 0 100px 0 ;
+}
+
+.coach-profile {
+  text-align: center;
+}
+
+.coach-profile img {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.coach-profile h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.coach-profile .specialty, .coach-profile .experience {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.coach-bio h3 {
+  font-size: 20px;
+}
+
+.coach-bio p {
+  line-height: 1.6;
+}
+
+/* Footer styles (customize as per your design) */
+footer {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.coach-classes {
+  margin-top: 30px;
+}
+
+.coach-classes h3 {
+  font-size: 20px;
+}
+
+.coach-classes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coach-classes li {
+  margin-bottom: 10px;
+}
+
+/* Style the class details spans */
+.coach-classes li .class-name {
+  font-weight: bold;
+}
+
+.coach-classes li .class-type {
+  color: #007bff; /* Blue color for class type (you can change this as per your preference) */
+  margin-left: 10px;
+}
+
+.coach-classes li .class-time {
+  color: #666; /* Dark grey color for class time (you can change this as per your preference) */
+  margin-left: 10px;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

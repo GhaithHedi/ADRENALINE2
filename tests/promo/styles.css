@@ -1,0 +1,33 @@
+
+  
+  .promo-section {
+    position: relative;
+    height:500px; /* Set your desired height */
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .promo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 90%;
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .promo-image:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.9;
+  }
+  
+ .promo-section a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  

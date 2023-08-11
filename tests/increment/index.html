@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>inc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/increment.css" rel="stylesheet">
+         <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+   
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Start Increment-->
+        <section class="increment">
+            <div class="section-counter paralax-mf bg-image" style="background-image: url(images/counters-bg.jpg)">
+                <div class="overlay-mf"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="counter-box">
+                                <div class="counter-ico">
+                                    <span class="ico-circle"><ion-icon name="accessibility-outline"></ion-icon></span>
+                                </div>
+                                <div class="counter-num">
+                                    <p class="counter">11</p>
+                                    <span class="counter-text">Trainers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="counter-box pt-4 pt-md-0">
+                                <div class="counter-ico">
+                                    <span class="ico-circle"><ion-icon name="bicycle-outline"></ion-icon></span>
+                                </div>
+                                <div class="counter-num">
+                                    <p class="counter">45</p>
+                                    <span class="counter-text">Equipments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="counter-box pt-4 pt-md-0">
+                                <div class="counter-ico">
+                                    <span class="ico-circle"><ion-icon name="people-outline"></ion-icon></span>
+                                </div>
+                                <div class="counter-num">
+                                    <p class="counter">450</p>
+                                    <span class="counter-text">Customers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="counter-box pt-4 pt-md-0">
+                                <div class="counter-ico">
+                                    <span class="ico-circle"><ion-icon name="cafe-outline"></ion-icon></span>
+                                </div>
+                                <div class="counter-num">
+                                    <p class="counter">1</p>
+                                    <span class="counter-text">Cafeteria</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    const counters = document.querySelectorAll('.counter');
+    const options = {
+        rootMargin: '0px',
+        threshold: 0.5 // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const endCount = parseInt(target.textContent);
+                let currentCount = 0;
+
+                const incrementValue = Math.ceil(endCount / 111); // Adjust the increment step as needed
+                const countInterval = setInterval(() => {
+                    if (currentCount < endCount) {
+                        currentCount += incrementValue;
+                        if (currentCount > endCount) {
+                            currentCount = endCount;
+                        }
+                        target.textContent = currentCount;
+                    } else {
+                        clearInterval(countInterval);
+                    }
+                }, 20); // Adjust the interval as needed
+            }
+        });
+    }, options);
+
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+</script>
+        </section>
+        <!-- End Increment-->
+
+
+    </body>
+</html>
